@@ -1,0 +1,198 @@
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  width: 100%;
+}
+
+.Header-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header-logo{
+  font-family:'Rajdhani-Bold', 'Franklin Gothic Medium', sans-serif;
+  font-size: 2.9rem;
+  color: var(--greenSoft);
+  min-width: max-content;
+}
+
+.Header-logo span{
+  font-family:'Rajdhani-semiBold', 'Franklin Gothic Medium', sans-serif;
+  font-size: 2.6rem;
+  color: var(--white);
+}
+
+.Header-right{
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.Header-ul{
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: var(--white);
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+.Header-li{
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.Header-li:hover{
+  color: var(--greenSoft);
+}
+
+.Header-li a{
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+
+.Header-button{
+  border: 2px solid var(--white);
+  border-radius: 8px;
+  background-color: transparent;
+  height: min-content;
+  width: max-content;
+  padding: 1rem 2.3rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  margin-left: 6vw;
+}
+
+.Header-button:hover{
+  transform: scale(1.02);
+  border-color: var(--greenSoft);
+  color: var(--greenSoft);
+}
+
+/* Mobile Header */
+
+.Header-menuButton{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.Header-menuButton img{
+  width: 3.5rem;
+  height: min-content;
+  margin-top: 4px;
+}
+
+.HeaderMobile{
+  display: none;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 60%;
+  height: 100vh;
+  padding: 10% 10% 10% 5%;
+  z-index: 10;
+  background-color: #162947;
+}
+
+.HeaderMobile-ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 0;
+}
+
+
+.HeaderMobile-li{
+  cursor: pointer;
+  transition: all 0.1s linear;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+}
+
+.HeaderMobile-li:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.HeaderMobile-li a{
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.HeaderMobile-button{
+  border: 2px solid var(--white);
+  border-radius: 8px;
+  background-color: transparent;
+  margin: 2rem;
+  height: min-content;
+  width: 100%;
+  padding: 1.2rem 2.3rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.HeaderMobile-button:hover{
+  transform: scale(1.02);
+  border-color: var(--greenSoft);
+  color: var(--greenSoft);
+}
+
+.HeaderMobile-close{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: min-content;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.HeaderMobile-close img{
+  width: 3.5rem;
+  height: min-content;
+  margin-top: 3px;
+}
+
+
+
+@media (max-width: 1080px) {
+  .Header-button{
+    margin-left: 4vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .Header-ul, .Header-button{
+    display: none;
+  }
+
+  .Header-menuButton{
+    display: block;
+  }
+
+  .HeaderMobile.isActive{
+    display: flex;
+    flex-direction: column;
+  }
+}

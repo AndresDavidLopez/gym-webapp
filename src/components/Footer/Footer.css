@@ -1,0 +1,37 @@
+.Footer{
+  height: 30rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.SocialNetworks{
+  display: flex;
+  gap: 4rem;
+  margin: 7rem 0 -2rem;
+}
+
+.SocialNetworks img{
+  width: 4rem;
+  cursor: pointer;
+}
+
+.Footer a{
+  margin-top: -4rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  color: rgb(0, 174, 255);
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.copyright{
+  font-size: 1.5rem;
+  margin-top: -4rem;
+  opacity: 0.6;
+}

@@ -1,0 +1,33 @@
+.Programas{
+  padding: 0 4rem 4.5rem;
+}
+
+.Programas-h2{
+  font-family:'Rajdhani-Bold', 'Franklin Gothic Medium', sans-serif;
+  font-style: italic;
+  color: var(--white);
+  font-size: 3.8rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  margin: 6.5rem 0;
+}
+
+.Programas-cardsContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+@media (max-width: 865px) {
+  .Programas-cardsContainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,auto);
+    margin: 0 7vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .Programas-cardsContainer{
+    padding: 0 8vw;
+  }
+}

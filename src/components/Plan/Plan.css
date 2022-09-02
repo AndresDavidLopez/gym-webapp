@@ -1,0 +1,99 @@
+.Plan{
+  background-image: linear-gradient(70deg, #accbeecc 0%, #e7f0fdcc 100%);
+  border-radius: 8px;
+  margin: 2.5rem 0;
+  color: black;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 1.6rem;
+  padding: 5rem 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  position: relative;
+}
+
+.Plan-recomendado{
+  position: absolute;
+  border-radius: 8px 8px 0 8px;
+  top: 20px;
+  right: -8px;
+  padding: 1rem 2rem;
+  color: var(--white);
+  background-color: rgb(23, 90, 145);
+}
+
+.Plan-recomendado::after{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 0 0 8px 0;
+  background-color: rgb(9, 62, 105);
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+}
+
+.Plan-icon{
+  width: 5rem;
+  height: auto;
+}
+
+.Plan-price{
+  font-size: 3.3rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+
+.Plan-dataContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.Plan-featureContainer{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Plan-featureContainer img{
+  height: 26px;
+  width: auto;
+  margin-top: -2px;
+}
+
+.Plan-feature{
+  margin: 0;
+}
+
+.Plan.isActive{
+  background-image: linear-gradient(220deg, #9ae15dcc 0%, #00e3aecc 100%);
+  margin: 0;
+}
+
+.Plan-button{
+  border: 2px solid black;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: rgb(30, 44, 70);
+  letter-spacing: 0.05rem;
+  padding: 1.2rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+@media (max-width: 800px) {
+  .Plan{
+    margin: 0 7rem;
+  }
+  .Plan.isActive{
+    margin: 0 4.5rem;
+  }
+  .Plan-dataContainer{
+    gap: 2vw;
+  }
+}

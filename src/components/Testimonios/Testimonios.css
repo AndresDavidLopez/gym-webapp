@@ -1,0 +1,142 @@
+.Testimonios{
+  display: flex;
+  gap: 1rem;
+  padding: 7rem 5vw;
+  margin: 4.5rem 0 7rem;
+  position: relative;
+}
+
+.Testimonios-left{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--white);
+  letter-spacing: 0.06rem;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 1.8rem;
+  width: 45vw;
+}
+
+.Testimonios-title{
+  font-family:'Rajdhani-Bold', 'Franklin Gothic Medium', sans-serif;
+  font-style: italic;
+  font-size: 3.8rem;
+  margin-bottom: 0rem;
+}
+
+.Testimonios-description{
+  margin-bottom: 4rem;
+}
+
+.Testimonio-review{
+  margin-left: 4rem;
+  line-height: 3rem;
+}
+
+.Testimonio-name{
+  margin: 1rem 0 0 4rem;
+  font-size: 1.6rem;
+  color: var(--greenSoft);
+}
+
+.Testimonio-name span {
+  color: white;
+  opacity: 0.8;
+  font-size: 1.4rem;
+}
+
+.Testimonios-right{
+  display: flex;
+  justify-content: center;
+  width: 45vw;
+}
+
+.Testimonio-foto{
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Testimonio-foto img{
+  width: 30rem;
+  height: min-content;
+  position: relative;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.Testimonio-foto span{
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  margin: 2rem 0 0 3rem;
+  background-image: linear-gradient(220deg, #9ae15dcc 0%, #00e3aecc 100%);
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.Testimonio-foto div{
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  margin: -2rem 0 0 -3rem;
+  border: 0.3rem solid white;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.Testimonios-buttons{
+  position: absolute;
+  bottom: -10rem;
+  display: flex;
+  gap: 3rem;
+  left: calc(50% - 6.5rem);
+}
+
+.Testimonios-buttons button{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.Testimonios-buttons button:hover{
+  transform: scale(1.05);
+}
+
+.Testimonios-buttons button img{
+  height: 5rem;
+  width: min-content;
+}
+
+
+@media (min-width: 1900px) {
+  .Testimonios{
+    padding: 7rem 11vw 0 15vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .Testimonios{
+    flex-direction: column;
+    padding: 7rem 8vw 0;
+  }
+
+  .Testimonios-title, .Testimonios-description, .Testimonio-review, .Testimonio-name{
+    text-align: center;
+  }
+
+  .Testimonio-review, .Testimonio-name{
+    margin: 0.4rem 0;
+  }
+  
+  .Testimonios-left, .Testimonios-right{
+    width: 84vw;
+  }
+  .Testimonios-right{
+    margin-top: 4rem;
+  }
+}

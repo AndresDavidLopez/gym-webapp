@@ -1,0 +1,32 @@
+.Planes-title{
+  font-family:'Rajdhani-Bold', 'Franklin Gothic Medium', sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-style: italic;
+  color: transparent;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  margin: 6.5rem 0;
+}
+
+.Planes-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 0 5rem 4.5rem;
+}
+
+@media (max-width: 800px) {
+  .Planes-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    padding: 0;
+  }
+}
+
+@media (min-width: 1900px) {
+  .Planes-container{
+    padding: 0 11vw;
+  }
+}

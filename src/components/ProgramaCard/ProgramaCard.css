@@ -1,0 +1,41 @@
+.ProgramaCard{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 4rem 3rem 1.5rem;
+  color: black;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(70deg, rgba(172, 203, 238, 0.8) 0%, rgba(231, 240, 253, 0.8) 100%);
+  border-radius: 8px;
+  transition: all .1s ease-in-out;
+}
+
+.ProgramaCard:hover{
+  background-image: linear-gradient(220deg, rgba(154, 225, 93, 0.8) 0%, rgba(0, 227, 174, 0.8) 100%);
+  transform: scale(1.02);
+  transition: all .2s ease-in-out;
+}
+
+.ProgramaCard-icon{
+  width: 6rem;
+  height: min-content;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 865px) {
+  .ProgramaCard{
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    max-height: min-content;
+    padding: 2rem 3rem;
+  }
+
+  .ProgramaCard-icon{
+    height: 6rem;
+    width: min-content;
+  }
+}
